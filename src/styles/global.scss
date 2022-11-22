@@ -65,6 +65,7 @@ body {
 }
 .most__luxury__right__pics {
   display: flex;
+  margin: 0em 3em;
 }
 .most__luxury__right__picture {
   padding-right: 2em;
@@ -195,4 +196,100 @@ body {
   background-color: #ebb93b !important;
   width: 20px !important;
   border-radius: 20px !important;
+}
+@media (max-width: 1450px) {
+  .most__luxury__right {
+    margin: 2em;
+  }
+}
+@media (max-width: 1350px) {
+  .most__luxury__right {
+    margin: 2em;
+  }
+  .most__luxury__left__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .most__luxury__right__pics {
+    display: flex;
+    justify-content: center;
+  }
+  .most__luxury__left__image {
+    width: 100%;
+    max-height: 500px;
+    max-width: 490px;
+    margin: 0em 3em;
+  }
+  .most__luxury__right__picture__img {
+    width: 100%;
+    max-height: 200px;
+    max-width: 300px;
+  }
+  .most__luxury__left__img {
+    padding-left: 0em;
+  }
+  .most__luxury {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .most__luxury__left {
+    width: 100%;
+  }
+  .most__luxury__right {
+    width: 100%;
+  }
+  .most__luxury__right__para {
+    width: 80%;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto;
+  }
+  .most__luxury__right__button {
+    margin: 0 auto;
+  }
+  .most__luxury__right__main__heading {
+    font-size: 45px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .most__luxury__right__main__heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 850px) {
+  .right__main__heading {
+    font-size: 32px;
+  }
+}
+@media (max-width: 670px) {
+  .most__luxury__right__main__heading {
+    font-size: 28px;
+  }
+}
+@media (max-width: 500px) {
+  .most__luxury__right__para {
+    width: 90%;
+  }
+  .most__luxury__left__image {
+    width: 90%;
+    max-height: 400px;
+    max-width: 350px;
+    margin: 0em 3em;
+  }
+  .most__luxury__right__picture__img {
+    width: 100%;
+    max-height: 300px;
+    max-width: 350px;
+  }
+  .most__luxury__right__pics {
+    flex-direction: column;
+    margin: 0em 1em;
+    align-items: center;
+  }
 }

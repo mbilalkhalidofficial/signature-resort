@@ -45,14 +45,14 @@ export default function index() {
           <div className="most__luxury__right__pics">
             <div className="most__luxury__right__picture">
               <img
-                className="most__luxury__left__image"
+                className="most__luxury__right__picture__img"
                 src={most__luxuay__right}
                 alt=""
               />
             </div>
             <div className="most__luxury__right__picture">
               <img
-                className="most__luxury__left__image"
+                className="most__luxury__right__picture__img"
                 src={most__luxuay__right}
                 alt=""
               />
