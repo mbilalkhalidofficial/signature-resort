@@ -149,3 +149,50 @@ body {
 .our__best__luxury__left__heading span {
   color: #105a4e;
 }
+.our__project {
+  display: flex;
+}
+.our__project__left {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+.our__project__left__heading {
+  font-family: "prata";
+  font-size: 42px;
+  margin-top: 4em;
+}
+.our__project__left__heading span {
+  color: #105a4e;
+}
+.our__project__right {
+  width: 65%;
+}
+
+.swiper-pagination-bullet swiper-pagination-bullet-active {
+  background-color: red !important;
+  color: red !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #ededed !important;
+  width: 50px !important;
+  height: 50px !important;
+  color: #ebb93b !important;
+  padding: 1em !important;
+  border-radius: 5px !important;
+  margin-left: 2em !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  scale: 0.5;
+}
+.swiper-button-disabled {
+  background-color: #1f4149 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ebb93b !important;
+  width: 20px !important;
+  border-radius: 20px !important;
+}

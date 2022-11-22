@@ -1,8 +1,17 @@
 import React from "react";
 import most__luxuay__left from "../assets/most__luxuay__left.png";
 import most__luxuay__right from "../assets/most__luxuay__right.png";
+import other__project from "../assets/other__project.png";
 import pakistan__left from "../assets/pakistan__left.png";
 import pakistan__right from "../assets/pakistan__right.png";
+import { Navigation, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 export default function index() {
   return (
@@ -125,6 +134,61 @@ export default function index() {
               src={pakistan__right}
               alt=""
             />
+          </div>
+        </div>
+      </div>
+      <div className="our__project">
+        <div className="our__project__left">
+          <div className="our__project__left__heading">
+            Other <span> Projects</span>
+          </div>
+        </div>
+        <div className="our__project__right">
+          <div>
+            <Swiper
+              modules={[Navigation, A11y]}
+              spaceBetween={50}
+              slidesPerView={3}
+              navigation
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => console.log("slide change")}
+            >
+              <SwiperSlide>
+                <img
+                  className="most__luxury__left__image"
+                  src={other__project}
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="most__luxury__left__image"
+                  src={other__project}
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="most__luxury__left__image"
+                  src={other__project}
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="most__luxury__left__image"
+                  src={other__project}
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="most__luxury__left__image"
+                  src={other__project}
+                  alt=""
+                />
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
