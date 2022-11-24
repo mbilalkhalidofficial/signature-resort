@@ -168,7 +168,7 @@ export default function index() {
         </div>
       </div> */}
       ////////
-      {/* <section className="ourbest">
+      <section className="ourbest">
         <div className="ourbest__left">
           <div className="ourbest__left__content">
             <div className="ourbest__left__text">Our best luxury features</div>
@@ -280,7 +280,7 @@ export default function index() {
           </div>
         </div>
       </section>
-      <section className="locationpointer">
+      {/* <section className="locationpointer">
         <div className="locationpointer__left">
           <div className="locationpointer__left__Content">
             <div className="locationpointer__left__img">
@@ -315,8 +315,8 @@ export default function index() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="locationfeatures">
+      </section> */}
+      {/* <section className="locationfeatures">
         <div className="locationfeatures__left">
           <div className="locationfeatures__left__content">
             <div className="locationfeatures__left__heading">
@@ -352,8 +352,8 @@ export default function index() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="aboutjseven">
+      </section> */}
+      {/* <section className="aboutjseven">
         <div className="aboutjseven__left">
           <div className="aboutjseven__left__content">
             <div className="aboutjseven__left__img">
@@ -380,8 +380,8 @@ export default function index() {
             <button className="aboutjseven__right__button">Read More</button>
           </div>
         </div>
-      </section>
-      <div className="our__project">
+      </section> */}
+      {/* <div className="our__project">
         <div className="our__project__left">
           <div className="our__project__left__heading">
             Other <span> Projects</span>
