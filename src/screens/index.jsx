@@ -167,7 +167,6 @@ export default function index() {
           </div>
         </div>
       </div> */}
-      ////////
       <section className="ourbest">
         <div className="ourbest__left">
           <div className="ourbest__left__content">
