@@ -5,7 +5,7 @@ import footerlogo from "../assets/footerlogo.png";
 export default function Footer() {
   return (
     <>
-      <div className="footer">
+      {/* <div className="footer">
         <div className="footer__left">
           <div className="footer__left__content">
             <img
@@ -53,7 +53,7 @@ export default function Footer() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

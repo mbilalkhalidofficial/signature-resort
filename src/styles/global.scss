@@ -57,6 +57,11 @@ body {
   width: 100%;
   height: 700px;
 }
+
+.most__luxury__right__picture__img img {
+  width: 100%;
+  max-width: 300px;
+}
 .homesection__left__button {
   background-color: #ebb93b;
   color: #fff;
@@ -114,7 +119,7 @@ body {
 }
 .most__luxury__right {
   width: 50%;
-  margin-top: 4em;
+  margin-top: 3em;
 }
 .most__luxury__left__img {
   width: 100%;
@@ -129,8 +134,10 @@ body {
   padding-left: 5em;
 }
 .most__luxury__right__main__heading {
-  font-size: 52px;
-  font-weight: 400;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 60px;
+  font-family: "El Messiri", sans-serif;
   width: 90%;
 }
 .most__luxury__right__para {
@@ -144,21 +151,31 @@ body {
 }
 .most__luxury__right__button {
   background-color: #ebb93b;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Montserrat";
   font-size: 14px;
   width: fit-content;
   padding: 1em 3em;
   color: white;
+  margin-top: 1em;
+  cursor: pointer;
 }
 .most__luxury__right__pics {
   display: flex;
-  margin: 0em 3em;
+  // margin: 0em 3em;
 }
 .most__luxury__right__picture {
   padding-right: 2em;
   margin-top: 4em;
 }
+.most__luxury__right__picture img {
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+}
+
+.most__luxury__right__picture:hover img {
+  transform: scale(1.1);
+}
+
 .our__best__luxury {
   display: flex;
   justify-content: space-between;
@@ -606,11 +623,13 @@ ourbest {
 @media (max-width: 1450px) {
   .most__luxury__right {
     margin: 2em;
+    margin-top: 5em;
   }
 }
 @media (max-width: 1350px) {
   .most__luxury__right {
     margin: 2em;
+    margin-top: 5em;
   }
   .most__luxury__left__img {
     display: flex;
@@ -640,17 +659,23 @@ ourbest {
     justify-content: center;
     align-items: center;
   }
+  .most__luxury__right__picture {
+    margin-top: 2em !important;
+  }
   .most__luxury__left {
     width: 100%;
   }
   .most__luxury__right {
     width: 100%;
   }
+
   .most__luxury__right__para {
     width: 80%;
     justify-content: center !important;
     align-items: center !important;
     margin: 0 auto;
+    text-align: center;
+    padding: 3em 0em;
   }
   .most__luxury__right__button {
     margin: 0 auto;
@@ -660,6 +685,7 @@ ourbest {
     width: 90%;
     text-align: center;
     margin: 0 auto !important;
+    line-height: 5px;
   }
 }
 
@@ -669,6 +695,9 @@ ourbest {
   }
 }
 @media (max-width: 850px) {
+  .most__luxury__right__main__heading {
+    line-height: 50px;
+  }
   .right__main__heading {
     font-size: 32px;
   }
@@ -677,16 +706,24 @@ ourbest {
   .most__luxury__right__main__heading {
     font-size: 28px;
   }
+  .most__luxury__right__para {
+    margin-top: -3em;
+  }
 }
 @media (max-width: 500px) {
   .most__luxury__right__para {
     width: 90%;
+    padding: 1em 0em;
+    margin-top: 1em;
+  }
+
+  .most__luxury__right__main__heading {
+    line-height: 38px;
   }
   .most__luxury__left__image {
     width: 90%;
     max-height: 400px;
     max-width: 350px;
-    margin: 0em 3em;
   }
   .most__luxury__right__picture__img {
     width: 100%;
@@ -733,8 +770,23 @@ ourbest {
   }
 }
 @media (max-width: 1000px) {
+  .most__luxury__right__pics {
+    flex-direction: column;
+    margin: 0em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .most__luxury__right__picture img {
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+    min-height: 250px;
+  }
+
   .ourbest__right__img {
-    margin-top: em;
+    margin-top: 1em;
   }
   .our__project {
     flex-direction: column;
@@ -1049,6 +1101,11 @@ ourbest {
   }
 }
 @media (max-width: 600px) {
+  .most__luxury__right__picture img {
+    min-width: 100%;
+
+    min-height: 100%;
+  }
   .homesection__right__img img {
     width: 100%;
     height: 580px;
