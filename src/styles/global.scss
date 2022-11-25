@@ -574,7 +574,8 @@ body {
   display: flex;
   margin: 0 auto;
   max-width: 1920px;
-  margin-top: 3em;
+  margin-top: 5em !important;
+  margin-bottom: 3em !important;
 }
 .aboutjseven__left {
   width: 50%;
@@ -584,14 +585,12 @@ body {
 }
 .aboutjseven__right {
   width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 450px;
+  margin-right: -2em;
+  margin: 8em 0em 0em 0em !important;
   margin: 0 auto;
 }
 .aboutjseven__left__img img {
-  width: 650px;
+  width: 700px;
 }
 .aboutjseven__right__heading {
   font-size: 45px;
@@ -606,7 +605,10 @@ body {
 .aboutjseven__right__info {
   color: #4d4c4c;
   font-family: "Montserrat", sans-serif;
-  margin: 2em 0em;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  width: 80%;
+  padding-top: 0em !important;
 }
 .aboutjseven__right__button {
   background-color: #ebb93b;
@@ -616,6 +618,7 @@ body {
   font-family: "Montserrat", sans-serif;
   border: none;
   cursor: pointer;
+  margin-top: 5em !important ;
   text-decoration: none;
 }
 .aboutjseven__right__button:hover {
@@ -705,6 +708,32 @@ body {
   }
 }
 @media (max-width: 1350px) {
+  .aboutjseven__right__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutjseven__right__heading {
+    margin-bottom: 0em;
+  }
+  .aboutjseven__right__info {
+    margin-bottom: 2em;
+  }
+  .aboutjseven__right {
+    margin: 0em !important;
+  }
+  .aboutjseven {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutjseven__left {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .aboutjseven__right {
+    width: 100%;
+  }
   .location__features {
     flex-direction: column;
   }
@@ -989,6 +1018,8 @@ body {
     width: 100%;
   }
   .aboutjseven {
+    display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1198,6 +1229,9 @@ body {
 }
 
 @media (max-width: 1500px) {
+  .aboutjseven__left__img img {
+    width: 600px;
+  }
   .homesection__right__button__svg {
     right: 130px;
   }
@@ -1247,18 +1281,6 @@ body {
   .locationfeatures__right {
     width: 100%;
   }
-  .aboutjseven {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .aboutjseven__left {
-    width: 100%;
-    margin-bottom: 2em;
-  }
-  .aboutjseven__right {
-    width: 100%;
-  }
 }
 @media (max-width: 950px) {
   .homesection {
@@ -1299,6 +1321,9 @@ body {
 //   }
 // }
 @media (max-width: 600px) {
+  .aboutjseven__right__info {
+    width: 100%;
+  }
   .location__features {
     margin-top: 4em !important;
     margin-bottom: 4em !important;
@@ -1391,7 +1416,7 @@ body {
   .aboutjseven__right__heading {
     text-align: center;
     font-size: 30px;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
   }
   .aboutjseven__right__info {
     text-align: center;
@@ -1465,6 +1490,9 @@ body {
   }
 }
 @media (max-width: 420px) {
+  .aboutjseven__left__img img {
+    width: 317px;
+  }
   .location__features__left__content_text {
     font-size: 16px;
   }

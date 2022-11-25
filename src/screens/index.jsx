@@ -387,7 +387,7 @@ export default function index() {
           </div>
         </div>
       </section> */}
-      {/* <section className="aboutjseven">
+      <section className="aboutjseven">
         <div className="aboutjseven__left">
           <div className="aboutjseven__left__content">
             <div className="aboutjseven__left__img">
@@ -411,10 +411,10 @@ export default function index() {
               around is a breeze, with easy access to freeways, buses and
               trolleys. . Laundry is available on premises.
             </div>
-            <button className="aboutjseven__right__button">Read More</button>
+            <div className="most__luxury__right__button">Read More</div>
           </div>
         </div>
-      </section> */}
+      </section>
       {/* <div className="our__project">
         <div className="our__project__left">
           <div className="our__project__left__heading">
