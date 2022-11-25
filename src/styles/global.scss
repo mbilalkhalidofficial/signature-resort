@@ -125,9 +125,13 @@ body {
 .most__luxury__left__img {
   width: 100%;
 }
-
+.ss {
+  margin-right: 3em !important;
+  margin-left: 3em !important;
+}
 .most__luxury__left {
   width: 50%;
+
   align-items: center;
   justify-content: center;
 }
@@ -314,12 +318,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -6em;
+  margin-right: -4em;
 }
 .ourbest__right__img {
   width: 100%;
   margin-top: 3em;
   margin-left: -4em;
+}
+.most__luxury__img {
+  width: 100%;
+  margin-top: 3em;
+  margin-left: -2em;
 }
 .our__best__luxury__card__card_main {
   max-height: 350px;
@@ -444,33 +453,70 @@ body {
 .locationpointer__right__info a:hover {
   color: #ebb93b;
 }
-.locationfeatures {
+
+.location__features {
   width: 100%;
   display: flex;
-
   margin: 0 auto;
-  max-width: 1920px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
   margin-top: 8em;
   margin-bottom: 8em;
 }
+.location__features__left {
+  width: 50%;
+}
+.location__features__right {
+  width: 50%;
+}
+
+.location__features__left__heading {
+  font-size: 45px;
+  font-family: "El Messiri", sans-serif;
+  line-height: 50px;
+  font-weight: 600;
+  color: black;
+}
+.location__features__left__content_text {
+  font-family: "El Messiri", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+.location__features__left___content {
+  margin-bottom: 5em;
+}
+.location__features__left__para {
+  font-family: "Montserrat";
+  color: #4d4c4c;
+  line-height: 22.4px;
+  padding: 2em 0em;
+}
+
+.location__features__left__heading span {
+  color: #105a4e;
+}
+.location__features__left__para {
+  width: 80%;
+}
+
 .ourbest__right__content {
   width: 100%;
 }
-.locationfeatures__left {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 450px;
-  margin: 0 auto;
+
+.most__luxury__left__content {
+  width: 100%;
 }
-.locationfeatures__right {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.location__features__right__img {
+  width: 100%;
+  width: 550px;
 }
-.locationfeatures__right__img img {
+.location__features__right__image {
+  max-width: 500px !important;
+  height: 400px;
+}
+
+.location__features__right__img .locationfeatures__right__img img {
   width: 650px;
 }
 .locationfeatures__left__heading {
@@ -496,6 +542,11 @@ body {
   margin: 0 auto;
   margin-left: 5em;
 }
+.most__luxury__img {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
 .locationfeatures__left__points a {
   font-family: "Montserrat", sans-serif;
@@ -503,18 +554,19 @@ body {
   font-size: 18px;
   text-decoration: none;
   color: #105a4e;
+  position: relative;
+}
+.locationfeatures__left__points a ::before {
+  top: 0;
+  position: absolute;
+  width: 20px;
+  background-color: red;
+  content: "";
+  height: 20px;
+  left: -20px;
 }
 .locationfeatures__left__points a:hover {
   color: #ebb93b;
-}
-
-.spanpoint {
-  color: #ebb93b;
-  font-weight: bold;
-  padding: 0.1em 0.6em;
-  margin-right: 0.6em;
-  border-radius: 50px;
-  background-color: #ebb93b;
 }
 
 .aboutjseven {
@@ -550,6 +602,7 @@ body {
   color: #105a4e;
   font-family: "Prata", serif;
 }
+
 .aboutjseven__right__info {
   color: #4d4c4c;
   font-family: "Montserrat", sans-serif;
@@ -640,6 +693,9 @@ body {
   .ourbest__right__img {
     margin-left: -0em;
   }
+  .most__luxury__img {
+    margin-left: -0em;
+  }
 }
 
 @media (max-width: 1450px) {
@@ -649,6 +705,28 @@ body {
   }
 }
 @media (max-width: 1350px) {
+  .location__features {
+    flex-direction: column;
+  }
+  .location__features__left {
+    width: 100%;
+    padding-left: 0em !important;
+    align-items: center;
+    text-align: center;
+  }
+  .location__features__left__para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .location__features__left__para {
+    width: 90%;
+  }
+  .location__features__right {
+    width: 100%;
+  }
   .our__best__luxury__card__card_main {
     margin: 0em 3em;
     max-width: 600px;
@@ -673,11 +751,19 @@ body {
     justify-content: center;
     margin: 0 auto;
   }
+  .most__luxury__img {
+    margin-left: -0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
   .ourbest__left__text {
     text-align: center;
   }
   .ourbest__right {
     width: 100%;
+    margin-right: -0em;
   }
   .ourbest__left__heading {
     margin: 0.3em 0em;
@@ -825,6 +911,17 @@ body {
     justify-content: center;
     margin: 0 auto;
   }
+  .most__luxury__img {
+    width: 520px;
+    margin-left: 2em;
+    margin-top: 2em;
+
+    margin-left: -0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
   .locationfeatures__right__img img {
     width: 500px;
   }
@@ -849,6 +946,10 @@ body {
   }
 
   .ourbest__right__img {
+    margin-top: 1em;
+    margin: 0 auto;
+  }
+  .most__luxury__img {
     margin-top: 1em;
     margin: 0 auto;
   }
@@ -951,8 +1052,17 @@ body {
     margin: 0 auto;
     width: 89% !important;
   }
+  .most__luxury__img {
+    width: 460px;
+    margin: 0 auto;
+    width: 89% !important;
+  }
 }
 @media (max-width: 550px) {
+  .ourbest__right {
+    padding-left: -3em !important;
+  }
+
   .homesection__left__heading {
     text-align: center;
     font-size: 30px;
@@ -1044,9 +1154,16 @@ body {
     width: 400px;
     margin: 0 auto;
   }
+  .most__luxury__img {
+    width: 400px;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 420px) {
   .ourbest__right__img {
+    width: 315px;
+  }
+  .most__luxury__img {
     width: 315px;
   }
   .our__best__luxury__card__left__img {
@@ -1071,6 +1188,13 @@ body {
     max-width: 589px;
     padding-left: 2em;
   }
+  .most__luxury__img {
+    max-width: 589px;
+    padding-left: 2em;
+  }
+  .location__features__left {
+    padding-left: 7em;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -1094,6 +1218,11 @@ body {
 }
 @media (max-width: 1150px) {
   .ourbest__right__img {
+    width: 520px;
+    margin: 0 auto;
+    padding-left: 0em;
+  }
+  .most__luxury__img {
     width: 520px;
     margin: 0 auto;
     padding-left: 0em;
@@ -1164,12 +1293,22 @@ body {
     padding-bottom: 2em;
   }
 }
-@media (max-width: 800px) {
-  .ourbest__right__content {
-    margin-right: 4em !important;
-  }
-}
+// @media (max-width: 800px) {
+//   .ourbest__right__content {
+//     margin-right: 4em !important;
+//   }
+// }
 @media (max-width: 600px) {
+  .location__features {
+    margin-top: 4em !important;
+    margin-bottom: 4em !important;
+  }
+  .ourbest__right__content {
+    margin-top: 2em !important;
+  }
+  .most__luxury__left__content {
+    margin-top: 2em !important;
+  }
   .most__luxury__right__picture img {
     min-width: 100%;
 
@@ -1191,6 +1330,26 @@ body {
   }
 }
 @media (max-width: 550px) {
+  .location__features__left___content {
+    margin-bottom: 1em;
+  }
+  .location__features__left__para {
+    text-align: center;
+  }
+  .location__features__left__heading {
+    font-size: 30px;
+  }
+  .location__features__left {
+    padding-left: 0em !important;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .location__features__left__content_text {
+    font-size: 18px;
+  }
+
   .homesection__left__heading {
     text-align: center;
     font-size: 30px;
@@ -1253,6 +1412,15 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .ourbest__right__content {
+    margin-right: -1em;
+  }
+  .most__luxury__left__content {
+    margin-right: -1em;
+  }
+  .most__luxury__right__button {
+    padding: 0.8em 2.5em;
+  }
   .our__best__luxury__card__card_main {
     margin: 0em 0em;
   }
@@ -1280,6 +1448,9 @@ body {
     height: 470px;
     margin: 0em 1em;
   }
+  .most__luxury__left {
+    padding-left: 1em;
+  }
   .homesection__right__button__svg {
     right: 43px;
     top: 360px;
@@ -1288,9 +1459,23 @@ body {
     width: 400px;
     margin-right: 2em;
   }
+  .most__luxury__img {
+    width: 400px;
+    margin-right: 2em;
+  }
 }
 @media (max-width: 420px) {
+  .location__features__left__content_text {
+    font-size: 16px;
+  }
+  .location__features__left__para {
+    width: 90%;
+    padding: 1em 0em;
+  }
   .ourbest__right__img {
+    width: 315px;
+  }
+  .most__luxury__img {
     width: 315px;
   }
   .our__best__luxury__card__left__img {
