@@ -682,6 +682,24 @@ body {
 .Overlay__Card__img img {
   width: 100%;
 }
+// .Overlay__Card__img {
+//   max-width: 300px;
+//   max-height: 300px;
+//   border-radius: 50%;
+//   margin: 0 auto;
+// }
+.Overlay__Card__con:hover .overlay__heading {
+  color: #ebb93b;
+}
+.overlay__heading {
+  font-size: 32px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Prata", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
 .Overlay__Card__con {
   width: 50%;
   margin: 0.4em;
@@ -689,6 +707,7 @@ body {
 }
 .Overlay__Card__con:hover .overlay__heading {
   color: #ebb93b;
+  transition: all 0.4s ease-in-out;
 }
 .swiper-pagination-bullet swiper-pagination-bullet-active {
   background-color: red !important;
@@ -1013,27 +1032,37 @@ body {
   }
 }
 @media (max-width: 1000px) {
-  .most__luxury__right__pics {
-    flex-direction: column;
-    margin: 0em 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  // .most__luxury__right__pics {
+  //   flex-direction: column;
+  //   margin: 0em 1em;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+  .overlay__heading {
+    left: 20% !important;
   }
   .Overlay__Cards {
-    flex-direction: column;
-
+    width: 100%;
+    flex-wrap: wrap;
     align-items: center;
   }
+
   .Overlay__Card__con {
-    width: 90% !important;
+    width: 47% !important;
     margin-bottom: 2em;
   }
   .most__luxury__right__picture img {
     width: 100%;
-    min-width: 400px;
+    min-width: 270px;
     height: 100%;
     min-height: 250px;
+  }
+  .most__luxury__right__pics {
+    margin: 0em 1em;
+  }
+  .most__luxury__right__picture {
+    padding-right: 2em !important;
   }
 
   .ourbest__right__img {
@@ -1128,6 +1157,10 @@ body {
   }
 }
 @media (max-width: 600px) {
+  .overlay__heading {
+    font-size: 28px;
+    left: 25% !important;
+  }
   .our__project {
     margin-top: 2em !important;
     margin-bottom: 2em !important;
@@ -1221,6 +1254,10 @@ body {
   .ourbest__left__content {
     margin: 0em 1em;
   }
+
+  .overlay__heading {
+    left: 28% !important;
+  }
   .locationfeatures__left__content {
     margin: 0em 1em;
   }
@@ -1299,6 +1336,9 @@ body {
   }
 }
 @media (max-width: 1200px) {
+  .overlay__heading {
+    left: 16% !important;
+  }
   .footer {
     flex-direction: column;
   }
@@ -1385,6 +1425,10 @@ body {
 @media (max-width: 600px) {
   .aboutjseven__right__info {
     width: 100%;
+  }
+  .Overlay__Card__con {
+    width: 100% !important;
+    margin: 0em 1em !important;
   }
   .location__features {
     margin-top: 4em !important;

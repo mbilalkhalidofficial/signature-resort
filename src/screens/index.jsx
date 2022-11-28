@@ -414,7 +414,7 @@ export default function index() {
                 <img src={nextpageimg} alt="overlaycard" />
               </div>
             </div>
-            <div className="overlay__heading">Hotel Apartment</div>
+            <div className="overlay__heading">Signature villa</div>
           </div>
           <div className="Overlay__Card__con">
             <div className="overlay__img">
@@ -422,7 +422,7 @@ export default function index() {
                 <img src={nextpageimg} alt="overlaycard" />
               </div>
             </div>
-            <div className="overlay__heading">Hotel Apartment</div>
+            <div className="overlay__heading">Hotel suite</div>
           </div>
           <div className="Overlay__Card__con">
             <div className="overlay__img">
