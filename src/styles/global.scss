@@ -275,7 +275,8 @@ body {
 .our__project__left__heading {
   font-family: "prata";
   font-size: 42px;
-  margin-top: 4em;
+  margin-top: 5em;
+  font-weight: 600;
 }
 .our__project__left__heading span {
   color: #105a4e;
@@ -594,8 +595,9 @@ body {
 }
 .aboutjseven__right__heading {
   font-size: 45px;
-  font-family: "Prata", serif;
+  font-family: "El Messiri", sans-serif;
   margin-bottom: 0.8em;
+  font-weight: 600;
 }
 .aboutjseven__right__heading span {
   color: #105a4e;
@@ -635,6 +637,58 @@ body {
 .most__luxury__right__image:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
+}
+.nextpagelink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.nextpagelink__imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.Overlay__Cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1920px;
+  margin-top: 5em;
+}
+.overlay__img {
+  background: linear-gradient(
+    360deg,
+    #cec3c38f 0%,
+    rgba(241, 245, 247, 0.801) 50%
+  );
+  z-index: 9999;
+  cursor: pointer;
+}
+.overlay__img:hover {
+  background: linear-gradient(180deg, #105a4e 0%, rgba(16, 90, 78, 0) 100%);
+  z-index: 9999;
+  cursor: pointer;
+}
+.Overlay__Card__img {
+  position: relative;
+  z-index: -999;
+}
+.Overlay__Card__img img {
+  width: 100%;
+}
+.Overlay__Card__con {
+  width: 50%;
+  margin: 0.4em;
+  position: relative;
+}
+.Overlay__Card__con:hover .overlay__heading {
+  color: #ebb93b;
 }
 .swiper-pagination-bullet swiper-pagination-bullet-active {
   background-color: red !important;
@@ -966,7 +1020,15 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .Overlay__Cards {
+    flex-direction: column;
 
+    align-items: center;
+  }
+  .Overlay__Card__con {
+    width: 90% !important;
+    margin-bottom: 2em;
+  }
   .most__luxury__right__picture img {
     width: 100%;
     min-width: 400px;

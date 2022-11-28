@@ -1,9 +1,10 @@
-import React from "react";
+// import React from "react";
 import most__luxuay__left from "../assets/most__luxuay__left.png";
 import most__luxuay__right from "../assets/most__luxuay__right.png";
 import other__project from "../assets/other__project.png";
 import locationpointerimg from "../assets/locationpointerimg.png";
 import locationfeaturesimg from "../assets/locationfeaturesimg.png";
+import nextpageimg from "../assets/nextpageimg.png";
 // import pakistan__left from "../assets/pakistan__left.png";
 // import pakistan__right from "../assets/pakistan__right.png";
 import basedright from "../assets/basedright.png";
@@ -12,7 +13,7 @@ import homesectionimg from "../assets/homesectionimg.png";
 import aboutjsevenimg from "../assets/aboutjsevenimg.png";
 import { Navigation, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import React, { useEffect, useState } from "react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -20,6 +21,24 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 export default function index() {
+  const [slidesPerView, setSlidesPerView] = useState(6);
+  function changeSlidesPerView() {
+    if (window.innerWidth < 470) {
+      setSlidesPerView(1.5);
+    } else if (window.innerWidth < 900) {
+      setSlidesPerView(2);
+    } else if (window.innerWidth < 1340) {
+      setSlidesPerView(3);
+    } else if (window.innerWidth < 1600) {
+      setSlidesPerView(2.5);
+    } else if (window.innerWidth < 4000) {
+      setSlidesPerView(3);
+    }
+  }
+  useEffect(() => {
+    changeSlidesPerView();
+    window.addEventListener("resize", changeSlidesPerView);
+  }, []);
   return (
     <>
       {/* <div className="homesection ">
@@ -387,6 +406,34 @@ export default function index() {
           </div>
         </div>
       </section> */}
+      <section className="nextpagelink">
+        <div className="Overlay__Cards">
+          <div className="Overlay__Card__con">
+            <div className="overlay__img">
+              <div className="Overlay__Card__img">
+                <img src={nextpageimg} alt="overlaycard" />
+              </div>
+            </div>
+            <div className="overlay__heading">Hotel Apartment</div>
+          </div>
+          <div className="Overlay__Card__con">
+            <div className="overlay__img">
+              <div className="Overlay__Card__img">
+                <img src={nextpageimg} alt="overlaycard" />
+              </div>
+            </div>
+            <div className="overlay__heading">Hotel Apartment</div>
+          </div>
+          <div className="Overlay__Card__con">
+            <div className="overlay__img">
+              <div className="Overlay__Card__img">
+                <img src={nextpageimg} alt="overlaycard" />
+              </div>
+            </div>
+            <div className="overlay__heading">Hotel Apartment</div>
+          </div>
+        </div>
+      </section>
       <section className="aboutjseven">
         <div className="aboutjseven__left">
           <div className="aboutjseven__left__content">
@@ -415,7 +462,7 @@ export default function index() {
           </div>
         </div>
       </section>
-      {/* <div className="our__project">
+      <div className="our__project">
         <div className="our__project__left">
           <div className="our__project__left__heading">
             Other <span> Projects</span>
@@ -426,7 +473,7 @@ export default function index() {
             <Swiper
               modules={[Navigation, A11y]}
               spaceBetween={50}
-              slidesPerView={3}
+              slidesPerView={slidesPerView}
               navigation
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
@@ -466,10 +513,24 @@ export default function index() {
                   alt=""
                 />
               </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="most__luxury__left__image"
+                  src={other__project}
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="most__luxury__left__image"
+                  src={other__project}
+                  alt=""
+                />
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
