@@ -14,6 +14,24 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#105a4e),
+    to(#ebb93b)
+  );
+  background: linear-gradient(#ebb93b 0%, #105a4e 100%);
+  border-radius: 50px;
+}
+body::-webkit-scrollbar-track {
+  background-color: white;
 }
 
 .homesection {
@@ -22,7 +40,8 @@ body {
   margin: 0 auto;
   max-width: 1920px;
   background-color: #105a4e;
-  padding-top: 4em;
+  padding-top: 6em;
+  padding-bottom: 6em;
   overflow-x: hidden;
 }
 .homesection__left {
@@ -136,7 +155,7 @@ body {
   justify-content: center;
 }
 .most__luxury__left__img {
-  padding-left: 5em;
+  padding-left: 0.5em;
 }
 .most__luxury__right__main__heading {
   font-size: 45px;
@@ -271,8 +290,8 @@ body {
 .our__project__left {
   width: 35%;
   display: flex;
-
   justify-content: center;
+  margin-left: 1em !important;
 }
 .our__project__left__heading {
   font-family: "prata";
@@ -284,7 +303,7 @@ body {
   color: #105a4e;
 }
 .our__project__right {
-  width: 65%;
+  width: 70%;
 }
 .ourbest {
   display: flex;
@@ -397,9 +416,10 @@ body {
 }
 .our__project {
   display: flex;
+  max-width: 1920px;
 }
 .our__project__left {
-  width: 35%;
+  width: 40%;
   display: flex;
   justify-content: center;
 }
@@ -587,11 +607,11 @@ body {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .aboutjseven__right {
   width: 50%;
-  margin-right: -2em;
+  padding-left: 2em;
   margin: 8em 0em 0em 0em !important;
   margin: 0 auto;
 }
@@ -614,7 +634,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin-top: 1em;
   margin-bottom: 4em;
-  width: 80%;
+  width: 75%;
   padding-top: 0em !important;
 }
 .aboutjseven__right__button {
@@ -637,7 +657,7 @@ body {
   color: #105a4e;
 }
 .our__project__right {
-  width: 65%;
+  width: 60%;
 }
 .most__luxury__right__image:hover {
   transform: scale(1.1);
@@ -808,6 +828,8 @@ body {
   .aboutjseven__left {
     width: 100%;
     margin-bottom: 2em;
+    display: flex;
+    justify-content: center !important;
   }
   .aboutjseven__right {
     width: 100%;
