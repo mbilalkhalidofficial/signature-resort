@@ -1,2 +1,10 @@
 export { default as react } from "./react.svg";
 export { default as locationpointerimg } from "./locationpointerimg.png";
+export { default as most__luxuay__left } from "./most__luxuay__left.png";
+export { default as most__luxuay__right } from "./most__luxuay__right.png";
+export { default as basedright } from "./basedright.png";
+export { default as basedleft } from "./basedleft.png";
+export { default as homesectionimg } from "./homesectionimg.png";
+export { default as locationfeaturesimg } from "./locationfeaturesimg.png";
+export { default as nextpageimg } from "./nextpageimg.png";
+export { default as aboutjsevenimg } from "./aboutjsevenimg.png";
