@@ -8,3 +8,4 @@ export { default as homesectionimg } from "./homesectionimg.png";
 export { default as locationfeaturesimg } from "./locationfeaturesimg.png";
 export { default as nextpageimg } from "./nextpageimg.png";
 export { default as aboutjsevenimg } from "./aboutjsevenimg.png";
+export { default as other__project } from "./other__project.png";
