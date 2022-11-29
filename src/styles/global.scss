@@ -411,10 +411,13 @@ body {
 .locationpointer {
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #105a4e;
   margin: 0 auto;
   max-width: 1920px;
   margin-top: 3em;
+  padding: 5em 0em;
 }
 .locationpointer__left {
   width: 50%;
@@ -704,7 +707,7 @@ body {
 }
 .Overlay__Card__con {
   width: 50%;
-  margin: 0.4em;
+
   position: relative;
 }
 .Overlay__Card__con:hover .overlay__heading {
@@ -939,6 +942,9 @@ body {
 @media (max-width: 950px) {
   .most__luxury__right__main__heading {
     font-size: 40px;
+  }
+  .locationpointer__left__Content {
+    overflow-x: hidden;
   }
 }
 @media (max-width: 850px) {
