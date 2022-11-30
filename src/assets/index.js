@@ -12,3 +12,4 @@ export { default as other__project } from "./other__project.png";
 export { default as location__pointer_1 } from "./location__pointer_1.png";
 export { default as location__pointer_2 } from "./location__pointer_2.png";
 export { default as location__pointer_3 } from "./location__pointer_3.png";
+export { default as headerlogo } from "./headerlogo.png";
