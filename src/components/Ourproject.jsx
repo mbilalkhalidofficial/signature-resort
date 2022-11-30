@@ -1,6 +1,7 @@
 import { Navigation, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import React, { useEffect, useState } from "react";
+
 import { other__project } from "../assets/index.js";
 import "swiper/css";
 import "swiper/css/navigation";

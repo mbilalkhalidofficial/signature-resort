@@ -1,15 +1,23 @@
-import React, { useEffect, useState } from "react";
 import { Pagination, A11y } from "swiper";
-
+import React, { useEffect, useState } from "react";
+import {
+  location__pointer_1,
+  location__pointer_2,
+  location__pointer_3,
+} from "../assets/index.js";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 
+import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
 
 export default function Locationpointer() {
   const [slidesPerView, setSlidesPerView] = useState(6);
   function changeSlidesPerView() {
-    if (window.innerWidth < 470) {
+    if (window.innerWidth < 500) {
+      setSlidesPerView(1);
+    } else if (window.innerWidth < 600) {
       setSlidesPerView(1.5);
     } else if (window.innerWidth < 900) {
       setSlidesPerView(2);
@@ -21,26 +29,60 @@ export default function Locationpointer() {
       setSlidesPerView(3);
     }
   }
+  useEffect(() => {
+    changeSlidesPerView();
+    window.addEventListener("resize", changeSlidesPerView);
+  }, []);
+
   return (
     <section className="locationpointer">
       <div className="locationpointer__left">
         <div className="locationpointer__left__Content">
           <Swiper
-            // install Swiper modules
             modules={[Pagination, A11y]}
             spaceBetween={50}
-            slidesPerView={3}
+            slidesPerView={slidesPerView}
             pagination={{ clickable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
           >
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            ...
+            <SwiperSlide>
+              <img
+                className="location__pointer__img"
+                src={location__pointer_1}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <img
+                  className="location__pointer__img"
+                  src={location__pointer_2}
+                  alt=""
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                className="location__pointer__img"
+                src={location__pointer_3}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                className="location__pointer__img"
+                src={location__pointer_1}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                className="location__pointer__img"
+                src={location__pointer_2}
+                alt=""
+              />
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>

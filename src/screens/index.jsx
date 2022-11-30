@@ -1,5 +1,4 @@
 import React from "react";
-
 import Locationpointer from "../components/locationpointer";
 import Mostluxury from "../components/Mostluxury";
 import Pakistanfirst from "../components/Pakistanfirst";

@@ -184,6 +184,16 @@ body::-webkit-scrollbar-track {
   color: white;
   margin-top: 1em;
   cursor: pointer;
+  outline: none;
+  border: 1px solid transparent;
+}
+.most__luxury__right__button {
+  background-color: #ebb93b;
+  font-weight: 400;
+}
+.most__luxury__right__button:hover {
+  background-color: #878787;
+  transition: 0.2s ease-in-out;
 }
 .most__luxury__right__pics {
   display: flex;
@@ -438,10 +448,24 @@ body::-webkit-scrollbar-track {
   margin: 0 auto;
   max-width: 1920px;
   margin-top: 3em;
-  padding: 5em 0em;
+  padding: 10em 0em;
 }
 .locationpointer__left {
-  width: 50%;
+  width: 60%;
+}
+.location__pointer__img {
+  width: 100%;
+  height: 100%;
+  max-height: 700px;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.location__pointer__img img {
+  max-width: 30px;
+  width: 100%;
+  height: 200px;
+  background-color: red !important;
 }
 .locationpointer__left__img img {
   width: 100%;
@@ -509,6 +533,15 @@ body::-webkit-scrollbar-track {
   font-family: "El Messiri", sans-serif;
   font-size: 20px;
   font-weight: 800;
+}
+.location__features__left__content_text::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  background-color: #ebb93b;
+  height: 10px;
+  border-radius: 50px;
+  margin-right: 10px;
 }
 .location__features__left___content {
   margin-bottom: 5em;
@@ -601,8 +634,8 @@ body::-webkit-scrollbar-track {
   display: flex;
   margin: 0 auto;
   max-width: 1920px;
-  margin-top: 5em !important;
-  margin-bottom: 5em !important;
+  margin-top: 12em !important;
+  margin-bottom: 12em !important;
 }
 .aboutjseven__left {
   width: 50%;
@@ -688,11 +721,6 @@ body::-webkit-scrollbar-track {
   margin-top: 5em;
 }
 .overlay__img {
-  background: linear-gradient(
-    360deg,
-    #cec3c38f 0%,
-    rgba(241, 245, 247, 0.801) 50%
-  );
   z-index: 9999;
   cursor: pointer;
 }
@@ -718,14 +746,33 @@ body::-webkit-scrollbar-track {
   color: #ebb93b;
 }
 .overlay__heading {
-  font-size: 32px;
+  font-size: 60px;
   color: #000000;
   font-weight: bold;
-  font-family: "Prata", sans-serif;
+  font-family: "El Messiri", sans-serif;
   position: absolute;
-  top: 50%;
-  left: 30%;
+  width: 100%;
+  background: linear-gradient(
+    360deg,
+    #cec3c38f 0%,
+    rgba(241, 245, 247, 0.801) 50%
+  );
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  top: 0em;
 }
+.overlay__heading:hover {
+  background: linear-gradient(
+    360deg,
+    #105a4e88 100%,
+    rgba(241, 245, 247, 0.801) 100%
+  );
+  transition: all 0.5s ease-in-out !important;
+}
+
 .Overlay__Card__con {
   width: 50%;
 
@@ -734,6 +781,7 @@ body::-webkit-scrollbar-track {
 .Overlay__Card__con:hover .overlay__heading {
   color: #ebb93b;
   transition: all 0.4s ease-in-out;
+  z-index: 999;
 }
 .swiper-pagination-bullet swiper-pagination-bullet-active {
   background-color: red !important;
@@ -797,6 +845,9 @@ body::-webkit-scrollbar-track {
   }
   .most__luxury__img {
     margin-left: -0em;
+  }
+  .overlay__heading {
+    font-size: 50px;
   }
 }
 
@@ -1070,9 +1121,7 @@ body::-webkit-scrollbar-track {
   //   justify-content: center;
   //   align-items: center;
   // }
-  .overlay__heading {
-    left: 20% !important;
-  }
+
   .Overlay__Cards {
     width: 100%;
     flex-wrap: wrap;
@@ -1080,8 +1129,11 @@ body::-webkit-scrollbar-track {
   }
 
   .Overlay__Card__con {
-    width: 47% !important;
-    margin-bottom: 2em;
+    width: 50% !important;
+    margin-bottom: 1em;
+  }
+  .overlay__heading {
+    font-size: 35px;
   }
   .most__luxury__right__picture img {
     width: 100%;
@@ -1190,7 +1242,6 @@ body::-webkit-scrollbar-track {
 @media (max-width: 600px) {
   .overlay__heading {
     font-size: 28px;
-    left: 25% !important;
   }
   .our__project {
     margin-top: 2em !important;
@@ -1286,9 +1337,6 @@ body::-webkit-scrollbar-track {
     margin: 0em 1em;
   }
 
-  .overlay__heading {
-    left: 28% !important;
-  }
   .locationfeatures__left__content {
     margin: 0em 1em;
   }
@@ -1368,7 +1416,7 @@ body::-webkit-scrollbar-track {
 }
 @media (max-width: 1200px) {
   .overlay__heading {
-    left: 16% !important;
+    font-size: 40px;
   }
   .footer {
     flex-direction: column;
@@ -1454,6 +1502,13 @@ body::-webkit-scrollbar-track {
 //   }
 // }
 @media (max-width: 600px) {
+  .our__project__left__heading {
+    font-size: 30px;
+    margin-top: 0em;
+  }
+  .aboutjseven__right {
+    padding-left: 0em !important;
+  }
   .aboutjseven__right__info {
     width: 100%;
   }
