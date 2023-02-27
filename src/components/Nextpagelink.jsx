@@ -1,5 +1,5 @@
-import React from "react";
 import { nextpageimg } from "../assets/index.js";
+
 export default function Nextpagelink() {
   return (
     <section className="nextpagelink">

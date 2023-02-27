@@ -1,4 +1,3 @@
-import React from "react";
 import { aboutjsevenimg } from "../assets/index.js";
 
 export default function Aboutsection() {

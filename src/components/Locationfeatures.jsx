@@ -1,5 +1,5 @@
-import React from "react";
 import { locationfeaturesimg } from "../assets/index.js";
+
 export default function Locationfeatures() {
   return (
     <div className="location__features">
