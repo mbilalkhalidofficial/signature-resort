@@ -1,6 +1,4 @@
 import { Head, Link } from "router";
-
-import React from "react";
 import { react } from "assets";
 import { useLoaderData } from "react-router-dom";
 
