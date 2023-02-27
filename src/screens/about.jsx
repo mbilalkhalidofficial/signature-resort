@@ -1,7 +1,5 @@
 import { Head, Link, NavLink } from "router";
 
-import React from "react";
-
 export default function About() {
   return (
     <div>

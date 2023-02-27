@@ -1,12 +1,8 @@
-import { Navigation, A11y } from "swiper";
+import { A11y, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { other__project } from "../assets/index.js";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 export default function Ourproject() {
   const [slidesPerView, setSlidesPerView] = useState(6);

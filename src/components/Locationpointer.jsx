@@ -1,16 +1,11 @@
-import { Pagination, A11y } from "swiper";
-import React, { useEffect, useState } from "react";
+import { A11y, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import {
   location__pointer_1,
   location__pointer_2,
   location__pointer_3,
 } from "../assets/index.js";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/scrollbar";
+import { useEffect, useState } from "react";
 
 export default function Locationpointer() {
   const [slidesPerView, setSlidesPerView] = useState(6);

@@ -1,5 +1,5 @@
-import React from "react";
 import { most__luxuay__left, most__luxuay__right } from "../assets/index.js";
+
 export default function Mostluxury() {
   return (
     <div className="most__luxury">

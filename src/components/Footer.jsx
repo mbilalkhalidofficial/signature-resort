@@ -1,7 +1,3 @@
-import React from "react";
-import footerrightimg from "../assets/footerrightimg.png";
-import footerlogo from "../assets/footerlogo.png";
-
 export default function Footer() {
   return (
     <>

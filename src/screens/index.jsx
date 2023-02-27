@@ -1,12 +1,11 @@
-import React from "react";
-import Locationpointer from "../components/locationpointer";
-import Mostluxury from "../components/Mostluxury";
-import Pakistanfirst from "../components/Pakistanfirst";
+import Aboutsection from "../components/Aboutsection";
 import HomeSection from "../components/HomeSection";
 import Locationfeatures from "../components/Locationfeatures";
+import Locationpointer from "../components/locationpointer";
+import Mostluxury from "../components/Mostluxury";
 import Nextpagelink from "../components/Nextpagelink";
-import Aboutsection from "../components/Aboutsection";
 import Ourproject from "../components/Ourproject";
+import Pakistanfirst from "../components/Pakistanfirst";
 
 export default function index() {
   return (
