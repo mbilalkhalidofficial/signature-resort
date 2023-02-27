@@ -1,5 +1,5 @@
-import React from "react";
-import { basedright, basedleft } from "../assets/index.js";
+import { basedleft, basedright } from "../assets/index.js";
+
 export default function Pakistanfirst() {
   return (
     <section className="ourbest">

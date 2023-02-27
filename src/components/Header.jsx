@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useLayoutEffect } from "react";
 import ClickAwayListener from "react-click-away-listener";
 import { headerlogo } from "../assets/index.js";
